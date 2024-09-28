@@ -136,6 +136,7 @@ public class EnergyDataFetcher implements ServiceInterface {
             akkuData.setSensor(akkuSensor);
 
             akkuData.setValue((Double) site.get("P_Akku"));
+            dataList.add(akkuData);
         } catch (Exception exception) {
             Log.info("There is no Akku-Data in this Fronius API!");
         }
